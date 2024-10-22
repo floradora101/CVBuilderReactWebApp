@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# CV Builder App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A web-based CV builder application made with **React.js** on the frontend and **Node.js** with **PostgreSQL** for the backend. It allows users to create, customize, and download CVs easily.
 
-## Available Scripts
 
-In the project directory, you can run:
+## Features
+- Create a personalized CV with a user-friendly interface.
+- Multiple CV templates designed with **Bootstrap**.
+- Save, edit, and download CVs in PDF format.
+- User authentication and data management with PostgreSQL.
 
-### `npm start`
+## Technologies Used
+- **Frontend**: React.js, Bootstrap
+- **Backend**: Node.js, Express.js
+- **Database**: PostgreSQL (with **pgAdmin** for database management)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation and Setup
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Prerequisites
+1. **Node.js**: Ensure you have Node.js installed. [Download here](https://nodejs.org/).
+2. **PostgreSQL**: Install PostgreSQL and **pgAdmin** to manage the database. [Download here](https://www.postgresql.org/download/).
 
-### `npm test`
+### Backend Setup
+1. Clone the repository:
+   git clone https://github.com/yourusername/cv-builder-app.git
+   cd cv-builder/server
+   npm install
+2. Clone the repository:
+   in config.json:
+     "development": {
+    "username": "postgres",
+    "password":your_db_password
+    "database": your_db_name,
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  3. Run database migrations: npx sequelize-cli db:migrate
+  4. npm start
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  ### Frontend Setup
+  1. cd client
+  2. npm install
+  3. npm start
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
