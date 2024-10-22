@@ -22,10 +22,11 @@ A web-based CV builder application made with **React.js** on the frontend and **
 
 ### Backend Setup
 1. Clone the repository:
-   git clone https://github.com/yourusername/cv-builder-app.git
-   cd cv-builder/server
+   git clone https://github.com/glitteryGeM/CVBuilderReactWebApp/
+   cd server
    npm install
-2. Clone the repository:
+      
+2. create a db with pg admin and name it
    in config.json:
      "development": {
     "username": "postgres",
@@ -34,8 +35,8 @@ A web-based CV builder application made with **React.js** on the frontend and **
     "host": "localhost",
     "dialect": "postgres"
   },
-  3. Run database migrations: npx sequelize-cli db:migrate
-  4. npm start
+  4. Run database migrations: npx sequelize-cli db:migrate
+  5. npm start
 
   ### Frontend Setup
   1. cd client
