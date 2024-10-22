@@ -22,7 +22,7 @@ A web-based CV builder application made with **React.js** on the frontend and **
 
 ### Backend Setup
 1. Clone the repository:
-   git clone https://github.com/glitteryGeM/CVBuilderReactWebApp/
+   git clone https://github.com/floradora101/CVBuilderReactWebApp
    cd server
    npm install
       
